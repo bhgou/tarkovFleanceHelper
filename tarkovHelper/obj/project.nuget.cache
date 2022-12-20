@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "yQZUFeUbS2GC/Nvk1rEo+XkFkNInvReNPEAqo/y+96JFVESUSxAAgkehV5hk2bhno0HIN9MW2WCbQ/tthqUIkA==",
+  "dgSpecHash": "Q7clJBcJlYvEj1LTucgQF/A01kMODym4wppxnGlacytFyUT/jIICarMjStN6ISvjjaHTLXqpGx1oomMx3b5G0A==",
   "success": true,
-  "projectFilePath": "C:\\Users\\brati\\source\\repos\\tarkovHelper\\tarkovHelper\\tarkovHelper.csproj",
+  "projectFilePath": "C:\\Users\\brati\\OneDrive\\Документы\\GitHub\\tarkovFleanceHelper\\tarkovHelper\\tarkovHelper.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\brati\\.nuget\\packages\\newtonsoft.json\\12.0.3\\newtonsoft.json.12.0.3.nupkg.sha512",
     "C:\\Users\\brati\\.nuget\\packages\\newtonsoft.json.bson\\1.0.2\\newtonsoft.json.bson.1.0.2.nupkg.sha512",

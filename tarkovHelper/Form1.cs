@@ -12,6 +12,7 @@ namespace tarkovHelper
         private async void Api()
         {
             string item = InputItem.Text;
+            NameItem.Text = "";
 
             var data = new Dictionary<string, string>()
             {           
@@ -26,7 +27,10 @@ namespace tarkovHelper
                 //Response content
                 var responseContent = await httpResponse.Content.ReadAsStringAsync();
                 var json = JsonConvert.DeserializeObject<Rootobject>(responseContent);
-                NameItem.Text = json.data.items[0].lastLowPrice.ToString();
+                for (int i = 0; i < json.data.items.Length; i++)
+                {
+                    NameItem.Text += $"Name: {json.data.items[i].name} Price: {json.data.items[i].lastLowPrice}\n";
+                }
             }
         }
 

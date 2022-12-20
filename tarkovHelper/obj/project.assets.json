@@ -138,11 +138,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\brati\\source\\repos\\tarkovHelper\\tarkovHelper\\tarkovHelper.csproj",
+      "projectUniqueName": "C:\\Users\\brati\\OneDrive\\Документы\\GitHub\\tarkovFleanceHelper\\tarkovHelper\\tarkovHelper.csproj",
       "projectName": "tarkovHelper",
-      "projectPath": "C:\\Users\\brati\\source\\repos\\tarkovHelper\\tarkovHelper\\tarkovHelper.csproj",
+      "projectPath": "C:\\Users\\brati\\OneDrive\\Документы\\GitHub\\tarkovFleanceHelper\\tarkovHelper\\tarkovHelper.csproj",
       "packagesPath": "C:\\Users\\brati\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\brati\\source\\repos\\tarkovHelper\\tarkovHelper\\obj\\",
+      "outputPath": "C:\\Users\\brati\\OneDrive\\Документы\\GitHub\\tarkovFleanceHelper\\tarkovHelper\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\brati\\AppData\\Roaming\\NuGet\\NuGet.Config",
