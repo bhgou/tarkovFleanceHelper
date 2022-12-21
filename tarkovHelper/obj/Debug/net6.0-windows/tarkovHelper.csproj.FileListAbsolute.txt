@@ -40,3 +40,5 @@ C:\Users\brati\OneDrive\Документы\GitHub\tarkovFleanceHelper\tarkovHelp
 C:\Users\brati\OneDrive\Документы\GitHub\tarkovFleanceHelper\tarkovHelper\obj\Debug\net6.0-windows\tarkovHelper.pdb
 C:\Users\brati\OneDrive\Документы\GitHub\tarkovFleanceHelper\tarkovHelper\obj\Debug\net6.0-windows\tarkovHelper.genruntimeconfig.cache
 C:\Users\brati\OneDrive\Документы\GitHub\tarkovFleanceHelper\tarkovHelper\obj\Debug\net6.0-windows\ref\tarkovHelper.dll
+C:\Users\brati\OneDrive\Документы\GitHub\tarkovFleanceHelper\tarkovHelper\obj\Debug\net6.0-windows\tarkovHelper.Properties.Resources.resources
+C:\Users\brati\OneDrive\Документы\GitHub\tarkovFleanceHelper\tarkovHelper\obj\Debug\net6.0-windows\tarkovHelper.RoundedBtn.resources

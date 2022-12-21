@@ -1,10 +1,16 @@
 using System.Diagnostics;
+using System.Net;
 using System.Net.Http.Json;
 using Newtonsoft.Json;
+
+
 namespace tarkovHelper
 {
     public partial class Form1 : Form
     {
+
+
+
         public Form1()
         {
             InitializeComponent();
@@ -16,7 +22,7 @@ namespace tarkovHelper
 
             var data = new Dictionary<string, string>()
             {           
-                {"query", "{items(name: \""+item+"\") { id name lastLowPrice }}"}
+                {"query", "{items(name: \""+item+"\") {name lastLowPrice gridImageLink}}"}
             };
             using (var httpClient = new HttpClient())
             {
@@ -27,14 +33,24 @@ namespace tarkovHelper
                 //Response content
                 var responseContent = await httpResponse.Content.ReadAsStringAsync();
                 var json = JsonConvert.DeserializeObject<Rootobject>(responseContent);
-                for (int i = 0; i < json.data.items.Length; i++)
-                {
-                    NameItem.Text += $"Name: {json.data.items[i].name} Price: {json.data.items[i].lastLowPrice}\n";
-                }
+                NameItem.Text += $"Name: {json.data.items[0].name} Price: {json.data.items[0].lastLowPrice} \n";
+                SetImage(json.data.items[0].gridImageLink);
+                
             }
         }
 
-        private void FindBtn_Click(object sender, EventArgs e)
+        private async void SetImage(string url) {
+            var request = WebRequest.Create(url);
+
+            using (var response = request.GetResponse())
+            using (var stream = response.GetResponseStream())
+            {
+                pictureBox1.Image = Bitmap.FromStream(stream);
+            }
+        }
+
+
+        private void FindBtn_Click_1(object sender, EventArgs e)
         {
             Api();
         }
