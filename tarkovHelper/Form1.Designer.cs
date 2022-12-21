@@ -36,6 +36,10 @@
             this.roundedBtn4 = new tarkovHelper.RoundedBtn();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.CountFind = new System.Windows.Forms.Label();
+            this.PriceItem = new System.Windows.Forms.Label();
+            this.button1 = new System.Windows.Forms.Button();
+            this.button2 = new System.Windows.Forms.Button();
+            this.Count = new System.Windows.Forms.Label();
             FindBtn = new tarkovHelper.RoundedBtn();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
@@ -57,14 +61,17 @@
             // 
             // NameItem
             // 
+            this.NameItem.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
             this.NameItem.AutoSize = true;
-            this.NameItem.Font = new System.Drawing.Font("Segoe UI", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.NameItem.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.NameItem.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.NameItem.Location = new System.Drawing.Point(56, 218);
+            this.NameItem.Location = new System.Drawing.Point(101, 209);
             this.NameItem.Name = "NameItem";
-            this.NameItem.Size = new System.Drawing.Size(128, 25);
+            this.NameItem.Size = new System.Drawing.Size(44, 17);
             this.NameItem.TabIndex = 2;
-            this.NameItem.Text = "Name:  Price:";
+            this.NameItem.Text = "Name";
             // 
             // InputItem
             // 
@@ -102,9 +109,12 @@
             // 
             // pictureBox1
             // 
-            this.pictureBox1.Location = new System.Drawing.Point(59, 258);
+            this.pictureBox1.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.pictureBox1.Location = new System.Drawing.Point(74, 229);
             this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(114, 82);
+            this.pictureBox1.Size = new System.Drawing.Size(110, 170);
             this.pictureBox1.TabIndex = 11;
             this.pictureBox1.TabStop = false;
             // 
@@ -119,12 +129,62 @@
             this.CountFind.TabIndex = 12;
             this.CountFind.Text = "Find: 0";
             // 
+            // PriceItem
+            // 
+            this.PriceItem.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.PriceItem.AutoSize = true;
+            this.PriceItem.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.PriceItem.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.PriceItem.Location = new System.Drawing.Point(100, 402);
+            this.PriceItem.Name = "PriceItem";
+            this.PriceItem.Size = new System.Drawing.Size(42, 17);
+            this.PriceItem.TabIndex = 13;
+            this.PriceItem.Text = "Price:";
+            // 
+            // button1
+            // 
+            this.button1.Location = new System.Drawing.Point(38, 310);
+            this.button1.Name = "button1";
+            this.button1.Size = new System.Drawing.Size(23, 23);
+            this.button1.TabIndex = 14;
+            this.button1.Text = "button1";
+            this.button1.UseVisualStyleBackColor = true;
+            this.button1.Click += new System.EventHandler(this.button1_Click);
+            // 
+            // button2
+            // 
+            this.button2.Location = new System.Drawing.Point(190, 310);
+            this.button2.Name = "button2";
+            this.button2.Size = new System.Drawing.Size(23, 23);
+            this.button2.TabIndex = 15;
+            this.button2.Text = "button2";
+            this.button2.UseVisualStyleBackColor = true;
+            this.button2.Click += new System.EventHandler(this.button2_Click);
+            // 
+            // Count
+            // 
+            this.Count.AutoSize = true;
+            this.Count.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.Count.ForeColor = System.Drawing.SystemColors.ControlDarkDark;
+            this.Count.Location = new System.Drawing.Point(112, 199);
+            this.Count.Name = "Count";
+            this.Count.Size = new System.Drawing.Size(14, 15);
+            this.Count.TabIndex = 16;
+            this.Count.Text = "0";
+            this.Count.Click += new System.EventHandler(this.label1_Click);
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(28)))), ((int)(((byte)(28)))), ((int)(((byte)(28)))));
             this.ClientSize = new System.Drawing.Size(274, 450);
+            this.Controls.Add(this.Count);
+            this.Controls.Add(this.button2);
+            this.Controls.Add(this.button1);
+            this.Controls.Add(this.PriceItem);
             this.Controls.Add(this.CountFind);
             this.Controls.Add(this.pictureBox1);
             this.Controls.Add(this.roundedBtn4);
@@ -150,5 +210,9 @@
         private RoundedBtn roundedBtn4;
         private PictureBox pictureBox1;
         private Label CountFind;
+        private Label PriceItem;
+        private Button button1;
+        private Button button2;
+        private Label Count;
     }
 }
