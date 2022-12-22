@@ -31,9 +31,6 @@
             tarkovHelper.RoundedBtn FindBtn;
             this.NameItem = new System.Windows.Forms.Label();
             this.InputItem = new System.Windows.Forms.TextBox();
-            this.roundedBtn2 = new tarkovHelper.RoundedBtn();
-            this.roundedBtn3 = new tarkovHelper.RoundedBtn();
-            this.roundedBtn4 = new tarkovHelper.RoundedBtn();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.CountFind = new System.Windows.Forms.Label();
             this.PriceItem = new System.Windows.Forms.Label();
@@ -52,7 +49,7 @@
             FindBtn.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             FindBtn.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             FindBtn.ForeColor = System.Drawing.Color.Black;
-            FindBtn.Location = new System.Drawing.Point(56, 135);
+            FindBtn.Location = new System.Drawing.Point(54, 92);
             FindBtn.Name = "FindBtn";
             FindBtn.RightToLeft = System.Windows.Forms.RightToLeft.No;
             FindBtn.Size = new System.Drawing.Size(138, 46);
@@ -69,7 +66,7 @@
             this.NameItem.AutoSize = true;
             this.NameItem.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.NameItem.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.NameItem.Location = new System.Drawing.Point(56, 209);
+            this.NameItem.Location = new System.Drawing.Point(54, 166);
             this.NameItem.Name = "NameItem";
             this.NameItem.Size = new System.Drawing.Size(44, 17);
             this.NameItem.TabIndex = 2;
@@ -78,37 +75,10 @@
             // 
             // InputItem
             // 
-            this.InputItem.Location = new System.Drawing.Point(38, 87);
+            this.InputItem.Location = new System.Drawing.Point(36, 44);
             this.InputItem.Name = "InputItem";
             this.InputItem.Size = new System.Drawing.Size(200, 23);
             this.InputItem.TabIndex = 3;
-            // 
-            // roundedBtn2
-            // 
-            this.roundedBtn2.Location = new System.Drawing.Point(12, 33);
-            this.roundedBtn2.Name = "roundedBtn2";
-            this.roundedBtn2.Size = new System.Drawing.Size(72, 31);
-            this.roundedBtn2.TabIndex = 8;
-            this.roundedBtn2.Text = "roundedBtn2";
-            this.roundedBtn2.UseVisualStyleBackColor = true;
-            // 
-            // roundedBtn3
-            // 
-            this.roundedBtn3.Location = new System.Drawing.Point(101, 33);
-            this.roundedBtn3.Name = "roundedBtn3";
-            this.roundedBtn3.Size = new System.Drawing.Size(72, 31);
-            this.roundedBtn3.TabIndex = 9;
-            this.roundedBtn3.Text = "roundedBtn3";
-            this.roundedBtn3.UseVisualStyleBackColor = true;
-            // 
-            // roundedBtn4
-            // 
-            this.roundedBtn4.Location = new System.Drawing.Point(190, 33);
-            this.roundedBtn4.Name = "roundedBtn4";
-            this.roundedBtn4.Size = new System.Drawing.Size(72, 31);
-            this.roundedBtn4.TabIndex = 10;
-            this.roundedBtn4.Text = "roundedBtn4";
-            this.roundedBtn4.UseVisualStyleBackColor = true;
             // 
             // pictureBox1
             // 
@@ -116,7 +86,7 @@
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
             this.pictureBox1.Image = global::tarkovHelper.Properties.Resources.circle;
-            this.pictureBox1.Location = new System.Drawing.Point(85, 229);
+            this.pictureBox1.Location = new System.Drawing.Point(83, 186);
             this.pictureBox1.Name = "pictureBox1";
             this.pictureBox1.Size = new System.Drawing.Size(98, 170);
             this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
@@ -128,7 +98,7 @@
             this.CountFind.AutoSize = true;
             this.CountFind.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.CountFind.ForeColor = System.Drawing.SystemColors.ControlDarkDark;
-            this.CountFind.Location = new System.Drawing.Point(101, 184);
+            this.CountFind.Location = new System.Drawing.Point(99, 141);
             this.CountFind.Name = "CountFind";
             this.CountFind.Size = new System.Drawing.Size(43, 15);
             this.CountFind.TabIndex = 12;
@@ -142,7 +112,7 @@
             this.PriceItem.AutoSize = true;
             this.PriceItem.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.PriceItem.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.PriceItem.Location = new System.Drawing.Point(58, 402);
+            this.PriceItem.Location = new System.Drawing.Point(56, 359);
             this.PriceItem.Name = "PriceItem";
             this.PriceItem.Size = new System.Drawing.Size(42, 17);
             this.PriceItem.TabIndex = 13;
@@ -153,7 +123,7 @@
             this.Count.AutoSize = true;
             this.Count.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.Count.ForeColor = System.Drawing.SystemColors.ControlDarkDark;
-            this.Count.Location = new System.Drawing.Point(112, 199);
+            this.Count.Location = new System.Drawing.Point(110, 156);
             this.Count.Name = "Count";
             this.Count.Size = new System.Drawing.Size(14, 15);
             this.Count.TabIndex = 16;
@@ -162,7 +132,7 @@
             // pictureBox2
             // 
             this.pictureBox2.Image = global::tarkovHelper.Properties.Resources.right_arrow;
-            this.pictureBox2.Location = new System.Drawing.Point(189, 297);
+            this.pictureBox2.Location = new System.Drawing.Point(187, 254);
             this.pictureBox2.Name = "pictureBox2";
             this.pictureBox2.Size = new System.Drawing.Size(49, 47);
             this.pictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
@@ -173,7 +143,7 @@
             // pictureBox3
             // 
             this.pictureBox3.Image = global::tarkovHelper.Properties.Resources.left_arrow;
-            this.pictureBox3.Location = new System.Drawing.Point(30, 297);
+            this.pictureBox3.Location = new System.Drawing.Point(28, 254);
             this.pictureBox3.Name = "pictureBox3";
             this.pictureBox3.Size = new System.Drawing.Size(49, 47);
             this.pictureBox3.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
@@ -193,9 +163,6 @@
             this.Controls.Add(this.PriceItem);
             this.Controls.Add(this.CountFind);
             this.Controls.Add(this.pictureBox1);
-            this.Controls.Add(this.roundedBtn4);
-            this.Controls.Add(this.roundedBtn3);
-            this.Controls.Add(this.roundedBtn2);
             this.Controls.Add(FindBtn);
             this.Controls.Add(this.InputItem);
             this.Controls.Add(this.NameItem);
@@ -217,9 +184,6 @@
         private Label NameItem;
         private TextBox InputItem;
         private RoundedBtn FindBtn;
-        private RoundedBtn roundedBtn2;
-        private RoundedBtn roundedBtn3;
-        private RoundedBtn roundedBtn4;
         private PictureBox pictureBox1;
         private Label CountFind;
         private Label PriceItem;

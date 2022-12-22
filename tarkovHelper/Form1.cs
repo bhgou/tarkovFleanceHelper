@@ -11,6 +11,7 @@ namespace tarkovHelper
 
         private int index = 0;
 
+
         private void ShowElements()
         {
             pictureBox1.Show();
@@ -49,7 +50,6 @@ namespace tarkovHelper
                 //Response content
                 var responseContent = await httpResponse.Content.ReadAsStringAsync();
                 var json = JsonConvert.DeserializeObject<Rootobject>(responseContent);
-
                 if(index < json.data.items.Length-1 && index >= 0)
                 {
                     CountFind.Text = "Find: " + json.data.items.Length.ToString();
@@ -62,9 +62,6 @@ namespace tarkovHelper
                 {
                     index = 0;
                 }
-               
-               
-                
             }
         }
 
@@ -79,6 +76,7 @@ namespace tarkovHelper
         }
         private void FindBtn_Click_1(object sender, EventArgs e)
         {
+            index = 0;
             Api();
         }
         private void pictureBox3_Click(object sender, EventArgs e)
