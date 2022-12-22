@@ -11,9 +11,27 @@ namespace tarkovHelper
 
         private int index = 0;
 
+        private void ShowElements()
+        {
+            pictureBox1.Show();
+            NameItem.Show();
+            PriceItem.Show();
+            pictureBox3.Show();
+            pictureBox2.Show();
+        }
+        private void HideElements()
+        {
+            pictureBox1.Hide();
+            NameItem.Hide();
+            PriceItem.Hide();
+            pictureBox3.Hide();
+            pictureBox2.Hide();
+        }
+
         public Form1()
         {
             InitializeComponent();
+            HideElements();
         }
         private async void Api()
         {
@@ -32,18 +50,20 @@ namespace tarkovHelper
                 var responseContent = await httpResponse.Content.ReadAsStringAsync();
                 var json = JsonConvert.DeserializeObject<Rootobject>(responseContent);
 
-                if(index > json.data.items.Length)
+                if(index < json.data.items.Length-1 && index >= 0)
                 {
-                    index = json.data.items.Length;
+                    CountFind.Text = "Find: " + json.data.items.Length.ToString();
+                    NameItem.Text = $"Name: {json.data.items[index].name}";
+                    PriceItem.Text = $"Price: {json.data.items[index].lastLowPrice} ";
+                    SetImage(json.data.items[index].gridImageLink);
+                    ShowElements();                   
                 }
-                if(index < 0)
+                else
                 {
                     index = 0;
                 }
-                CountFind.Text =  "Find: " + json.data.items.Length.ToString();
-                NameItem.Text = $"Name: {json.data.items[index].name}";
-                PriceItem.Text = $"Price: {json.data.items[index].lastLowPrice} ";
-                SetImage(json.data.items[index].gridImageLink);
+               
+               
                 
             }
         }
@@ -57,30 +77,22 @@ namespace tarkovHelper
                 pictureBox1.Image = Bitmap.FromStream(stream);
             }
         }
-
-
         private void FindBtn_Click_1(object sender, EventArgs e)
         {
             Api();
         }
-
-        private void button1_Click(object sender, EventArgs e)
-        {
-            Api();
-            index++;
-            Count.Text = index.ToString();
-        }
-
-        private void button2_Click(object sender, EventArgs e)
+        private void pictureBox3_Click(object sender, EventArgs e)
         {
             Api();
             index--;
             Count.Text = index.ToString();
         }
 
-        private void label1_Click(object sender, EventArgs e)
+        private void pictureBox2_Click(object sender, EventArgs e)
         {
-
+            Api();
+            index++;
+            Count.Text = index.ToString();
         }
     }
 }
